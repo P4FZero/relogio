@@ -10,7 +10,7 @@ function displayClock() {
 
     clockPara.innerHTML = `${clock}`;
 
-    if (clockPara.innerHTML >= "06:00:00" && clockPara < "12:00:00") {
+    if (clockPara.innerHTML >= "06:00:00" && clockPara.innerHTML < "12:00:00") {
         updatePara.innerHTML = "Tenha um bom dia!";
         img.src = "images/morning.png";
         document.body.style.backgroundColor = "rgb(199, 205, 208)";
