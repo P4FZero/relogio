@@ -10,11 +10,11 @@ function displayClock() {
 
     clockPara.innerHTML = `${clock}`;
 
-    if (clockPara.innerHTML >= "06:00:00" && clockPara <= "12:00:00") {
+    if (clockPara.innerHTML >= "06:00:00" && clockPara < "12:00:00") {
         updatePara.innerHTML = "Tenha um bom dia!";
         img.src = "images/morning.png";
         document.body.style.backgroundColor = "rgb(199, 205, 208)";
-    } else if (clockPara.innerHTML <= "18:00:00") {
+    } else if (clockPara.innerHTML >= "12:00:00" && clockPara.innerHTML <= "18:00:00") {
         img.src = "images/afternoon.png";
         updatePara.innerHTML = "Tenha uma boa tarde!";
         document.body.style.backgroundColor = "rgb(253, 154, 45)";
